@@ -1,13 +1,16 @@
 body {
     background: linear-gradient(to right, #173019 20%, #325e2e 80%);
-    display: flex;
     }
+
 /***header***/
 header nav ul{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     list-style: none;
-    gap: 120px;
+    gap: 100px;
+    margin-bottom: 50px;
+    padding: 0;
 }
 header nav ul li a{
     color: #ffffff; 
@@ -32,4 +35,27 @@ header nav ul li a:hover::after{
 .logo{
     height: 100px;
     width: 100px;
+}
+
+/***content***/
+/*welcome section*/
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    background-image: url(/images/img1.png);
+    background-size: cover;
+    padding: 50px;
+}
+.welcome h1{
+    font-size: 50px;
+    color: #6fbe24;
+    text-shadow: 5px 10px 3px #000000;
+}
+.welcome p{
+    font-size: 35px;
+    color: #000000;
+    text-shadow: 1px 1px 2px #000000;
 }
