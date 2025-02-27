@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to right, #173019 20%, #325e2e 80%);
+    background: linear-gradient(to right, #556d4d 50%, #354430 80%);
     }
 
 /***header***/
@@ -23,7 +23,7 @@ header nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #8aeb2f;
+    background:   #2a3626;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -34,7 +34,6 @@ header nav ul li a:hover::after{
 }
 .logo{
     height: 100px;
-    width: 100px;
 }
 
 /***content***/
@@ -42,20 +41,27 @@ header nav ul li a:hover::after{
 .welcome{
     display: flex;
     justify-content: center;
-    align-items: center;
     text-align: center;
-    flex-wrap: wrap;
     background-image: url(/images/img1.png);
     background-size: cover;
-    padding: 50px;
-}
-.welcome h1{
+    padding: 150px;
     font-size: 50px;
-    color: #6fbe24;
+    color: #dee05e;
     text-shadow: 5px 10px 3px #000000;
 }
-.welcome p{
-    font-size: 35px;
-    color: #000000;
-    text-shadow: 1px 1px 2px #000000;
+/*about section*/
+.about{
+    background-color: #2a3626;;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.about img{
+    width: 50%;
+    border-radius: 20px;
+}
+.aboutmaintitle{
+    color: #ffffff;
+    font-size: 30px;
 }
