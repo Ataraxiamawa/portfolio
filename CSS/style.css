@@ -8,7 +8,7 @@ header nav ul{
     justify-content: center;
     flex-wrap: wrap;
     list-style: none;
-    gap: 100px;
+    gap: 90px;
     margin-bottom: 50px;
     padding: 0;
 }
@@ -109,4 +109,55 @@ header nav ul li a:hover::after{
 }
 .subtitlecontent.activecontent{
     display: block;
+}
+/*project section*/
+.project {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project h2 {
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: #dee05e;
+    text-shadow: 5px 10px 3px #000000;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+    max-width: 80%; 
+}
+
+.projectcontent {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.projectcontent:hover {
+    transform: translateY(-5px);
+}
+
+.projectcontent img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.projectcontent h3 {
+    font-size: 30px;
+    margin-top: 10px;
+    color: #5b9c6a;
+}
+
+.projectcontent p {
+    font-size: 20px;
+    color: #344b30;
 }
