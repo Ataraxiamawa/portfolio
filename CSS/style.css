@@ -133,7 +133,7 @@ header nav ul li a:hover::after{
 }
 
 .projectcontent {
-    background: #fff;
+    background: #2a3626;
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
@@ -154,10 +154,40 @@ header nav ul li a:hover::after{
 .projectcontent h3 {
     font-size: 30px;
     margin-top: 10px;
-    color: #5b9c6a;
+    color: #91b984
 }
 
 .projectcontent p {
     font-size: 20px;
-    color: #344b30;
+    color: #91b984
+}
+/* Contact Section */
+.contact {
+    text-align: center;
+    background-color: #2a3626;
+    color: #ffffff;
+    margin-top: 100px;
+    padding-right: 50%;
+    padding-left: 50%;
+}
+
+.contact h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #dee05e;
+}
+
+.contact p {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.social {
+    margin-top: 20px;
+}
+
+.social a {
+    font-size: 40px;
+    color: #dee05e;
+    margin: 20px;
 }
