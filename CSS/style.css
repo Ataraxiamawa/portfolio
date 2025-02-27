@@ -45,7 +45,7 @@ header nav ul li a:hover::after{
     background-image: url(/images/img1.png);
     background-size: cover;
     padding: 150px;
-    font-size: 50px;
+    font-size: 40px;
     color: #dee05e;
     text-shadow: 5px 10px 3px #000000;
 }
@@ -76,7 +76,7 @@ header nav ul li a:hover::after{
     gap: 100px
 }
 .subtitle{
-    margin-right: 50px;
+    margin-right: 10px;
     font-size: 20px;
     font-weight: 200;
     cursor: pointer;
