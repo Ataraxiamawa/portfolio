@@ -37,11 +37,11 @@
                         user experiences.</p>
                 </div>
                 <div class="aboutsubtitle">
-                    <p class="subtitle active">Skills</p>
-                    <p class="subtitle">Experience</p>
-                    <p class="subtitle">Education</p>
+                    <p class="subtitle activetitle" onclick="opensub('skills')">Skills</p>
+                    <p class="subtitle" onclick="opensub('experience')">Experience</p>
+                    <p class="subtitle" onclick="opensub('education')">Education</p>
                 </div>
-                <div class="subtitlecontent active">
+                <div class="subtitlecontent activecontent" id="skills">
                     <ul>
                         <li><span>Software Development</span><br>Scrum, Kanban, Waterfall, Agile Methodologies</li>
                         <li><span>Project Management</span><br>Microsoft Project, Jira, Slack</li>
@@ -52,13 +52,13 @@
                         <li><span>Game Development</span><br>C#, Unity Engine, Blender</li>
                     </ul>
                 </div>
-                <div class="subtitlecontent">
+                <div class="subtitlecontent" id="experience">
                     <ul>
                         <li><span>Digital Artist (Self-Employed)</span><br>Created and sold individual artworks including 3D and 2D arts, pixel art, and portraits.
                             <br>Managed digital art projects from concept to completion, ensuring high-quality deliverables.</li>
                     </ul>
                 </div>
-                <div class="subtitlecontent">
+                <div class="subtitlecontent" id="education">
                     <ul>
                         <li><span>Bechelor, University of jeddah</span><br>Software Engineering Major</li>
                         <li> 08/2021–12/2025<br>Jeddah, Saudi Arabia</li>
@@ -67,5 +67,22 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function opensub(titlename) {
+            var subtitles = document.getElementsByClassName("subtitle");
+            var subtitlecontents = document.getElementsByClassName("subtitlecontent");
+    
+            for (var sub of subtitles) {
+                sub.classList.remove("activetitle");
+            }
+            for (var content of subtitlecontents) {
+                content.classList.remove("activecontent");
+            }
+    
+            document.getElementById(titlename).classList.add("activecontent");
+            event.target.classList.add("activetitle");
+        }
+    </script>
 </body>
 </html>

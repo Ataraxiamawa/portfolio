@@ -92,7 +92,7 @@ header nav ul li a:hover::after{
     bottom: -10px;
     transition: 0.5s;
 }
-.subtitle.active::after{
+.subtitle.activetitle::after{
     width: 50%;
 }
 .subtitlecontent ul li{
@@ -107,6 +107,6 @@ header nav ul li a:hover::after{
 .subtitlecontent{
     display: none;
 }
-.subtitlecontent.active{
+.subtitlecontent.activecontent{
     display: block;
 }
