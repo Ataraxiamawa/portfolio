@@ -1,0 +1,21 @@
+body {
+    background: linear-gradient(to right, #173019 20%, #325e2e 80%);
+    display: flex;
+    }
+/***header***/
+header nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 100px;
+}
+header nav ul li a{
+    color: #ffffff; 
+    font-size: 30px;
+    text-decoration: none;
+    line-height: 100px; 
+}
+.logo{
+    height: 100px;
+    width: 100px;
+}
