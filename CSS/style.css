@@ -22,11 +22,11 @@ header nav ul li a{
 header nav ul li a::after{
     content: '';
     width: 0;
-    height: 3px;
+    height: 5px;
     background:   #2a3626;
     position: absolute;
     left: 0;
-    bottom: -6px;
+    bottom: -5px;
     transition: 0.5s;
 }
 header nav ul li a:hover::after{
@@ -58,10 +58,55 @@ header nav ul li a:hover::after{
     gap: 100px;
 }
 .about img{
-    width: 50%;
+    width: 40%;
     border-radius: 20px;
 }
 .aboutmaintitle{
+    font-size: 20px;
+}
+.aboutmaintitle h2{
     color: #ffffff;
-    font-size: 30px;
+}
+.aboutmaintitle p{
+    color: #dee05e;
+}
+.aboutsubtitle{
+    display: flex;
+    color: #ffffff;
+    gap: 100px
+}
+.subtitle{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 200;
+    cursor: pointer;
+    position: relative;
+}
+.subtitle::after{
+    content: '';
+    width: 0;
+    height: 10px;
+    background:   #dee05e;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.subtitle.active::after{
+    width: 50%;
+}
+.subtitlecontent ul li{
+    list-style: none;
+    margin: 20px;
+    color:  #dee05e;
+}
+.subtitlecontent ul li span{
+    color: #ffffff;
+    font-size: 20px;
+}
+.subtitlecontent{
+    display: none;
+}
+.subtitlecontent.active{
+    display: block;
 }
