@@ -7,13 +7,27 @@ header nav ul{
     display: flex;
     justify-content: center;
     list-style: none;
-    gap: 100px;
+    gap: 120px;
 }
 header nav ul li a{
     color: #ffffff; 
     font-size: 30px;
     text-decoration: none;
-    line-height: 100px; 
+    line-height: 100px;
+    position: relative;
+}
+header nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #8aeb2f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+header nav ul li a:hover::after{
+    width:100%
 }
 .logo{
     height: 100px;
