@@ -1,6 +1,6 @@
 body {
-    background: linear-gradient(to right, #556d4d 50%, #354430 80%);
-    }
+    background: linear-gradient(to right, #556d4d 30%, #354430 70%);
+}
 
 /***header***/
 header nav ul{
@@ -8,32 +8,33 @@ header nav ul{
     justify-content: center;
     flex-wrap: wrap;
     list-style: none;
-    gap: 90px;
-    margin-bottom: 50px;
+    gap: 4vw;
+    margin-bottom: 5vw;
     padding: 0;
 }
 header nav ul li a{
     color: #ffffff; 
-    font-size: 30px;
+    font-size: 2vw;
     text-decoration: none;
-    line-height: 100px;
+    line-height: 5vw;
     position: relative;
 }
 header nav ul li a::after{
     content: '';
     width: 0;
-    height: 5px;
-    background:   #2a3626;
+    height: 0.5vw;
+    background: #2a3626;
     position: absolute;
     left: 0;
-    bottom: -5px;
+    bottom: -0.5vw;
     transition: 0.5s;
 }
 header nav ul li a:hover::after{
-    width:100%
+    width: 100%
 }
 .logo{
-    height: 100px;
+    height: 8vw;
+    width: 20vw;
 }
 
 /***content***/
@@ -44,25 +45,26 @@ header nav ul li a:hover::after{
     text-align: center;
     background-image: url(/images/img1.png);
     background-size: cover;
-    padding: 150px;
-    font-size: 40px;
+    padding: 10vw;
+    font-size: 3vw; 
     color: #dee05e;
-    text-shadow: 5px 10px 3px #000000;
+    text-shadow: 0.5vw 1vw 0.3vw #000000;
 }
+
 /*about section*/
 .about{
-    background-color: #2a3626;;
-    padding: 100px;
+    background-color: #2a3626;
+    padding: 3vw;
     display: flex;
     justify-content: space-between;
-    gap: 100px;
+    gap: 3vw;
 }
 .about img{
-    width: 40%;
-    border-radius: 20px;
+    width: 30%;
+    border-radius: 1.5vw;
 }
 .aboutmaintitle{
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 .aboutmaintitle h2{
     color: #ffffff;
@@ -73,11 +75,11 @@ header nav ul li a:hover::after{
 .aboutsubtitle{
     display: flex;
     color: #ffffff;
-    gap: 100px
+    gap: 3vw;
 }
 .subtitle{
-    margin-right: 10px;
-    font-size: 20px;
+    margin-right: 1vw;
+    font-size: 1.5vw;
     font-weight: 200;
     cursor: pointer;
     position: relative;
@@ -85,11 +87,11 @@ header nav ul li a:hover::after{
 .subtitle::after{
     content: '';
     width: 0;
-    height: 10px;
-    background:   #dee05e;
+    height: 0.5vw;
+    background: #dee05e;
     position: absolute;
     left: 0;
-    bottom: -10px;
+    bottom: -0.5vw;
     transition: 0.5s;
 }
 .subtitle.activetitle::after{
@@ -97,12 +99,13 @@ header nav ul li a:hover::after{
 }
 .subtitlecontent ul li{
     list-style: none;
-    margin: 20px;
-    color:  #dee05e;
+    margin: 1.5vw;
+    font-size: 1.5vw;
+    color: #dee05e;
 }
 .subtitlecontent ul li span{
     color: #ffffff;
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 .subtitlecontent{
     display: none;
@@ -110,6 +113,7 @@ header nav ul li a:hover::after{
 .subtitlecontent.activecontent{
     display: block;
 }
+
 /*project section*/
 .project {
     text-align: center;
@@ -119,75 +123,76 @@ header nav ul li a:hover::after{
 }
 
 .project h2 {
-    font-size: 50px;
-    margin-bottom: 50px;
+    font-size: 5vw;
+    margin-bottom: 5vw;
     color: #dee05e;
-    text-shadow: 5px 10px 3px #000000;
+    text-shadow: 0.5vw 1vw 0.3vw #000000;
 }
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 50px;
-    max-width: 80%; 
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    gap: 5vw;
+    max-width: 80vw;
 }
 
 .projectcontent {
     background: #2a3626;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 2vw;
+    border-radius: 1vw;
     transition: transform 0.3s ease-in-out;
     overflow: hidden;
 }
 
 .projectcontent:hover {
-    transform: translateY(-5px);
+    transform: translateY(-0.5vw);
 }
 
 .projectcontent img {
     width: 100%;
-    height: 200px;
+    height: 10vw;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 1vw;
 }
 
 .projectcontent h3 {
-    font-size: 30px;
-    margin-top: 10px;
-    color: #91b984
+    font-size: 3vw;
+    margin-top: 1vw;
+    color: #91b984;
 }
 
 .projectcontent p {
-    font-size: 20px;
-    color: #91b984
+    font-size: 2vw;
+    color: #91b984;
 }
+
 /* Contact Section */
 .contact {
     text-align: center;
     background-color: #2a3626;
     color: #ffffff;
-    margin-top: 100px;
-    padding-right: 50%;
-    padding-left: 50%;
+    width: 100vw;
+    margin-top: 10vw;
+    padding: 3vw;
 }
 
 .contact h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 3vw;
+    margin-bottom: 2vw;
     color: #dee05e;
 }
 
 .contact p {
-    font-size: 20px;
-    margin: 10px;
+    font-size: 2vw;
+    margin: 1vw;
 }
 
 .social {
-    margin-top: 20px;
+    margin-top: 2vw;
 }
 
 .social a {
-    font-size: 40px;
+    font-size: 3vw;
     color: #dee05e;
-    margin: 20px;
+    margin: 2vw;
 }
