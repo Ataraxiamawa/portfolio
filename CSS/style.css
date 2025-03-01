@@ -123,7 +123,7 @@ header nav ul li a:hover::after{
 }
 
 .project h2 {
-    font-size: 5vw;
+    font-size: 3vw;
     margin-bottom: 5vw;
     color: #dee05e;
     text-shadow: 0.5vw 1vw 0.3vw #000000;
@@ -132,7 +132,7 @@ header nav ul li a:hover::after{
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
-    gap: 5vw;
+    gap: 4vw;
     max-width: 80vw;
 }
 
@@ -150,13 +150,13 @@ header nav ul li a:hover::after{
 
 .projectcontent img {
     width: 100%;
-    height: 10vw;
+    height: 20vw;
     object-fit: cover;
     border-radius: 1vw;
 }
 
 .projectcontent h3 {
-    font-size: 3vw;
+    font-size: 2vw;
     margin-top: 1vw;
     color: #91b984;
 }
@@ -164,6 +164,9 @@ header nav ul li a:hover::after{
 .projectcontent p {
     font-size: 2vw;
     color: #91b984;
+}
+.projectcontent a{
+    text-decoration: none;  
 }
 
 /* Contact Section */
@@ -177,13 +180,13 @@ header nav ul li a:hover::after{
 }
 
 .contact h2 {
-    font-size: 3vw;
+    font-size: 2.5vw;
     margin-bottom: 2vw;
     color: #dee05e;
 }
 
 .contact p {
-    font-size: 2vw;
+    font-size: 1.5vw;
     margin: 1vw;
 }
 
@@ -192,7 +195,7 @@ header nav ul li a:hover::after{
 }
 
 .social a {
-    font-size: 3vw;
+    font-size: 2.5vw;
     color: #dee05e;
     margin: 2vw;
 }
