@@ -171,6 +171,7 @@ header nav ul li a:hover::after{
 .note{
     font-size: 2vw;
     margin-top: 6vw;  
+    text-shadow: 0vw 0.2vw 0.2vw #000000;
     color: #dee05e; 
 }
 
@@ -178,6 +179,7 @@ header nav ul li a:hover::after{
 .contact {
     text-align: center;
     background-color: #2a3626;
+    font-size: 2vw;
     color: #ffffff;
     width: 100vw;
     margin-top: 10vw;
@@ -188,6 +190,7 @@ header nav ul li a:hover::after{
     font-size: 2.5vw;
     margin-bottom: 2vw;
     color: #dee05e;
+    text-shadow: 0vw 0.4vw 0.2vw #000000;
 }
 
 .contact p {
