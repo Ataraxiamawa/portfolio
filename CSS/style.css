@@ -168,6 +168,11 @@ header nav ul li a:hover::after{
 .projectcontent a{
     text-decoration: none;  
 }
+.note{
+    font-size: 2vw;
+    margin-top: 6vw;  
+    color: #dee05e; 
+}
 
 /* Contact Section */
 .contact {
